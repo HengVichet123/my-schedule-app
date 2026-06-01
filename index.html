@@ -664,7 +664,7 @@ async function syncFromGitHub(type) {
   try {
     if (token) {
       // Bidirectional: fetch via API (gets sha + content), merge, push back
-      const apiUrl = `https://api.github.com/repos/HengVichet123/my-schedule/contents/${file}`;
+      const apiUrl = `https://api.github.com/repos/HengVichet123/my-schedule-app/contents/${file}`;
       const res = await fetch(apiUrl, { headers: { Authorization: `token ${token}` } });
       if (!res.ok) throw new Error('API error');
       const fileData = await res.json();
