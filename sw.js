@@ -1,4 +1,4 @@
-const CACHE = 'schedule-v11';
+const CACHE = 'schedule-v12';
 const FILES = ['/', '/index.html', '/manifest.json', '/icon.png'];
 
 self.addEventListener('install', e => e.waitUntil(
