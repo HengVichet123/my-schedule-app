@@ -1,6 +1,6 @@
 # Shift PWA — Project Notes
 
-Live at: https://HengVichet123.github.io/my-schedule/
+Live at: https://HengVichet123.github.io/my-schedule-app/
 
 ## What This Is
 
@@ -54,7 +54,7 @@ Copies `shifts.json` and `school_shifts.json` from `shift-timetable/` into this 
 
 ### Sync (bidirectional)
 - Needs a GitHub Personal Access Token stored in ⚙️ settings
-- Token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Contents: Read & Write for `my-schedule` repo
+- Token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Contents: Read & Write for `my-schedule-app` repo
 - Phone wins on conflict (phone edits are never overwritten by GitHub data)
 - Auto-saves a backup snapshot before every sync (keeps last 10)
 

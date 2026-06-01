@@ -206,7 +206,7 @@
     <div class="form-group">
       <label>GitHub Token (for two-way shift sync)</label>
       <input type="password" id="input-token" placeholder="github_pat_xxxxxxxxxxxx">
-      <p style="font-size:0.75rem;color:#999;margin-top:4px">GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Contents: Read &amp; Write for my-schedule repo.</p>
+      <p style="font-size:0.75rem;color:#999;margin-top:4px">GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Contents: Read &amp; Write for my-schedule-app repo.</p>
     </div>
     <div class="modal-actions" style="margin-bottom:16px">
       <button class="btn-danger" onclick="clearToken()">Clear token</button>
@@ -685,7 +685,7 @@ async function syncFromGitHub(type) {
       alert(`Synced both ways! Phone edits pushed to GitHub.`);
     } else {
       // Pull only
-      const res = await fetch(`https://HengVichet123.github.io/my-schedule/${file}?t=` + Date.now());
+      const res = await fetch(`https://HengVichet123.github.io/my-schedule-app/${file}?t=` + Date.now());
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       const existing = new Set(entries.map(e => e.id));
