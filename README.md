@@ -4,6 +4,8 @@ A personal schedule PWA (Progressive Web App) installable on an iPhone home scre
 
 **Live:** https://HengVichet123.github.io/my-schedule-app/
 
+![App screenshot](example_img.jpeg)
+
 ---
 
 ## Features
